@@ -47,14 +47,19 @@ for _ in 1...tineLength {
     print("")
 }
 
-
+// print the part that joins the tines and the handle
+for _ in 1...3 + 2 * spacing{
+    print("*", terminator:"")
+}
+// Go to next line of output
+print("")
 
 // get the handle in the correct position
 for _ in 1...handleLength{
     
     // add spaces to the left
     for _ in 1...spacing + 1 {
-        print("s", terminator: "")
+        print(" ", terminator: "")
     }
     
     // print handle
