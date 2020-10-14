@@ -52,8 +52,8 @@ b += evening * 35
 b += weekend * 25
 
 // OUTPUT
-print("Plan A costs \(a)")
-print("Plan B costs \(b)")
+print("Plan A costs \(a) cents. ")
+print("Plan B costs \(b) cents. ")
 
 if a > b {
     print("Plan B is cheapest.")
