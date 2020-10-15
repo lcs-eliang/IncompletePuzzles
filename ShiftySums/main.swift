@@ -19,15 +19,18 @@ print("===========")
 let n = Int(readLine()!)!
 
 // How many times should we shift?
-let k = 3
+print("How many times do you like to shift?")
+let k = Int(readLine()!)!
 
 // PROCESS
 
 // Shift the given number "k" number of times
 var output = n
-output += n * 10
-output += n * 10 * 10
-output += n * 10 * 10 * 10
 
+for exponent in 1...k{
+    let newValue = Int(pow(10.0, Float(exponent)))
+    let willBeAdded = n * newValue
+    output += willBeAdded
+}
 // OUTPUT
 print(output)
