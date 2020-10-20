@@ -16,11 +16,12 @@ print("====================")
 // INPUT
 
 // Ask for the speed limit
-print("What is the speed limit, in km/h? ", terminator: "")
-let limit = Int(readLine()!)!
+var limit = Int.collectInput(withPrompt: "What is the speed limit?", minimum: 0, maximum: nil)
 
-print("What is your current speed, in km/h? ", terminator: "")
-let speed = Int(readLine()!)!
+
+//Ask for the current speed.
+var speed = Int.collectInput(withPrompt: "What is your current speed?", minimum: 0, maximum: nil)
+
 // PROCESS AND OUTPUT
 
 // What's the difference between the speed and the speed limit
