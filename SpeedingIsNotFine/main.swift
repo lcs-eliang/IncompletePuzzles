@@ -31,7 +31,7 @@ switch difference {
 case -10...10:
     print("You're doing GREAT!")
 case 10...:
-    print("Slow down, Too fast!")
+    print("Slow down, too fast!")
 default:
-    print("Too slow, Drive faster!")
+    print("Too slow, drive faster!")
 }

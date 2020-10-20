@@ -16,16 +16,16 @@ print("=============")
 // INPUT
 
 // Get daytime minutes
-print("Number of daytime minutes?")
-let day = Int(readLine()!)!
 
-// Get evening minutes
-print("Number of evening minutes?")
-let evening = Int(readLine()!)!
+var day = Int.collectInput(withPrompt: "Number of daytime minutes?", minimum: 0, maximum: nil)
+
+//Get evening minutes
+var evening = Int.collectInput(withPrompt: "Number of evening minutes?", minimum: 0, maximum: nil)
 
 //Get weekend minutes
-print("Number of weekend minutes?")
-let weekend = Int(readLine()!)!
+var weekend = Int.collectInput(withPrompt: "Number of weekend minutes?", minimum: 0, maximum: nil)
+
+
 
 // Calculate cost for plan A
 var a = 0
@@ -60,3 +60,4 @@ if a > b {
 } else {
     print("Plan A is cheapest.")
 }
+
