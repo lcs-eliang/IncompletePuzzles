@@ -16,18 +16,14 @@ print("=======")
 // INPUT
 
 // Get tine length
-print("Enter tine length:")
-print("   ", terminator: "")
-let tineLength = Int(readLine()!)!
+var tineLength = Int.collectInput(withPrompt: "Enter tine length: ", minimum: 0, maximum: 10)
 
 // Get tine spacing
-print("Enter tine spacing:")
-print("   ", terminator: "")
-let spacing = Int(readLine()!)!
+var spacing = Int.collectInput(withPrompt: "Enter the spacing: ", minimum: 0, maximum: 10)
 
-print("Enter handle length:")
-print("   ", terminator:"")
-let handleLength = Int(readLine()!)!
+// Get handle length
+var handleLength = Int.collectInput(withPrompt: "Enter handle length", minimum: 0, maximum: 10)
+
 
 // OUTPUT
 

@@ -16,11 +16,11 @@ print("===========")
 // INPUT
 
 // Get the number to be shifted
-let n = Int(readLine()!)!
+var n = Int.collectInput(withPrompt: "The number to be shifted: ", minimum: 0, maximum: nil)
+
 
 // How many times should we shift?
-print("How many times do you like to shift?")
-let k = Int(readLine()!)!
+var k = Int.collectInput(withPrompt: "Number of time we should shift: ", minimum: 0, maximum: nil)
 
 // PROCESS
 
@@ -33,4 +33,5 @@ for exponent in 1...k{
     output += willBeAdded
 }
 // OUTPUT
+print("shifty sums: ")
 print(output)
